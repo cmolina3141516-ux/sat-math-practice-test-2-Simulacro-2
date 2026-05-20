@@ -22,7 +22,7 @@ export interface MathModuleDefinition {
 export type ModuleAnswers = Record<number, string>;
 
 const imagePath = (module: 1 | 2, id: number) =>
-  `/math/simulacro2/module${module}/q${String(id).padStart(2, '0')}.png`;
+  `${import.meta.env.BASE_URL}math/simulacro2/module${module}/q${String(id).padStart(2, '0')}.png`;
 
 const choice = (
   module: 1 | 2,
